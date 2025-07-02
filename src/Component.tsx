@@ -6,23 +6,17 @@ interface Component {
   onClick?: () => void; // adding this question mark will make the fn optional to use
 }
 
-interface data {
-  name: string;
-  price: number;
-}
 const Component: React.FC<Component> = (prop) => {
-  const [num, setnum] = useState<number>(0);
-  const [pdata, setPdata] = useState<data>({
-    name: "Shirt",
-    price: 500,
-  });
+  const [name, setname] = useState<string>("");
+
+  const changehandler = (e) => {
+    setname(e.target.value);
+  };
+
   return (
     <div>
-      {num}
-      <button onClick={() => setPdata({ name: "Pant", price: 1000 })}>{prop.text}</button>
-      <h1>
-        Name: {pdata.name} Price: {pdata.price}
-      </h1>
+      <input type="text" placeholder="Enter your name" onChange={(e) => changehandler(e)} value={name} />
+      {name}
     </div>
   );
 };
