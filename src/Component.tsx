@@ -19,7 +19,10 @@ const Component: React.FC<Component> = (prop) => {
   return (
     <div>
       {num}
-      <button onClick={() => setnum(num + 1)}>{prop.text}</button>
+      <button onClick={() => setPdata({ name: "Pant", price: 1000 })}>{prop.text}</button>
+      <h1>
+        Name: {pdata.name} Price: {pdata.price}
+      </h1>
     </div>
   );
 };
