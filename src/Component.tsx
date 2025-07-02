@@ -6,8 +6,16 @@ interface Component {
   onClick?: () => void; // adding this question mark will make the fn optional to use
 }
 
+interface data {
+  name: string;
+  price: number;
+}
 const Component: React.FC<Component> = (prop) => {
   const [num, setnum] = useState<number>(0);
+  const [pdata, setPdata] = useState<data>({
+    name: "Shirt",
+    price: 500,
+  });
   return (
     <div>
       {num}
