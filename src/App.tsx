@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <Component text={"Hello click me"} />
+      <Component text={"Hello click me"} onClick={() => alert("Hello world")} />
     </>
   );
 }
