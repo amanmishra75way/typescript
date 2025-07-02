@@ -7,7 +7,7 @@ interface Component {
 }
 
 const Component: React.FC<Component> = (prop) => {
-  const [num, setnum] = useState(0);
+  const [num, setnum] = useState<number>(0);
   return (
     <div>
       {num}
