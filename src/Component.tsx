@@ -1,17 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
 interface Component {
   text: string;
   onClick?: () => void; // adding this question mark will make the fn optional to use
 }
-//creating our own type
-type prop = { text: string; num: number };
 
-const Component: React.FC<prop> = (prop) => {
+const Component: React.FC<Component> = (prop) => {
+  const [num, setnum] = useState(0);
   return (
     <div>
-      {/* <button onClick={prop.onClick}>{prop.text}</button> */}
-      <button>{prop.text}</button>
+      {num}
+      <button onClick={() => setnum(num + 1)}>{prop.text}</button>
     </div>
   );
 };
