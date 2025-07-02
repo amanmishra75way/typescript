@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
 interface Component {
-  text: string;
+  // this is way of multiple type
+  text: string | number | boolean;
   onClick?: () => void; // adding this question mark will make the fn optional to use
 }
 
