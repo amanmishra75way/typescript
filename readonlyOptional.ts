@@ -23,3 +23,8 @@ const loginUser: User = {
   email: "aman@gmail.com",
   password: "1234",
 };
+
+//union with Arrays in typescript
+const data: number[] = [1, 2, 3, 4, 5, 6];
+// const MixData: number[] | string[] = [1, 2, 3, 4, 5, 6];
+const MixData: number[] | string[] = ["a", "b", "c", "d", "e"];
