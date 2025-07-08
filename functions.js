@@ -21,3 +21,13 @@ var voteable = function (name, age, elligible) {
     return elligible;
 };
 console.log(voteable("Aman", 21));
+//Restricting return type of a fn
+var isAdult = function (age) {
+    if (age >= 18) {
+        return true;
+    }
+    else {
+        return false;
+    }
+    //   return "hello"; THIS TIME THIS WILL CAUSE ERROR
+};
