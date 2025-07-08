@@ -2,7 +2,10 @@
 const user = {
   name: "Aman",
   age: 21,
-  email: "aman@gmail.com",
   isAdmin: true,
 };
+
+//passing object as parameter can pass 1type only once
+function regsiterUser({ name: string, age: number, isAdmin: boolean }) {}
+regsiterUser({ name: "Aman", age: 21, isAdmin: true });
 export {};
