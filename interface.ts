@@ -20,3 +20,21 @@ const Aman: User = {
     }
   },
 };
+
+//interface 1 opening
+interface userCredentails {
+  name: string;
+  password: string;
+}
+
+//interface 2 openeing
+interface userCredentails {
+  role: "admin" | "user";
+}
+
+// using boths inetrface here only
+const user: userCredentails = {
+  name: "Aman",
+  password: "scvscd",
+  role: "admin",
+};
