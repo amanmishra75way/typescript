@@ -17,4 +17,4 @@ const newUser: User = {
   isAdmin: true,
 };
 
-newUser._id = "2"; // this can not be chabngebale beacuase readonly
+// newUser._id = "2"; // this can not be chabngebale beacuase readonly
