@@ -23,4 +23,14 @@ const voteable = (name: string, age: number, elligible: boolean = false) => {
 
 console.log(voteable("Aman", 21));
 
+//Restricting return type of a fn
+const isAdult = (age: number): boolean => {
+  if (age >= 18) {
+    return true;
+  } else {
+    return false;
+  }
+  //   return "hello"; THIS TIME THIS WILL CAUSE ERROR
+};
+
 export {};
