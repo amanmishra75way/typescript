@@ -1,15 +1,19 @@
-var Aman = {
+// // interface User {
+// //   email: string;
+// //   userId: number;
+// //   googleId?: string;
+// //   startTrial: () => string;
+// //   getCoupon(cpid: string): number;
+// // }
+// using boths inetrface here only
+var user = {
+    name: "Aman",
+    password: "scvscd",
+    role: "admin",
+};
+var newAdmin = {
+    id: 1,
     email: "a@gmail.com",
-    userId: 1122,
-    startTrial: function () {
-        return "trial started";
-    },
-    getCoupon: function (cpid) {
-        if (cpid === "ALL10") {
-            return 10;
-        }
-        else {
-            return 0;
-        }
-    },
+    password: "pwd",
+    role: "Admin",
 };

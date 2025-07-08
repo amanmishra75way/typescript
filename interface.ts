@@ -1,25 +1,25 @@
-interface User {
-  email: string;
-  userId: number;
-  googleId?: string;
-  startTrial: () => string;
-  getCoupon(cpid: string): number;
-}
+// // interface User {
+// //   email: string;
+// //   userId: number;
+// //   googleId?: string;
+// //   startTrial: () => string;
+// //   getCoupon(cpid: string): number;
+// // }
 
-const Aman: User = {
-  email: "a@gmail.com",
-  userId: 1122,
-  startTrial: () => {
-    return "trial started";
-  },
-  getCoupon: (cpid: "ALL10") => {
-    if (cpid === "ALL10") {
-      return 10;
-    } else {
-      return 0;
-    }
-  },
-};
+// const Aman: User = {
+//   email: "a@gmail.com",
+//   userId: 1122,
+//   startTrial: () => {
+//     return "trial started";
+//   },
+//   getCoupon: (cpid: "ALL10") => {
+//     if (cpid === "ALL10") {
+//       return 10;
+//     } else {
+//       return 0;
+//     }
+//   },
+// };
 
 //interface 1 opening
 interface userCredentails {
@@ -37,4 +37,22 @@ const user: userCredentails = {
   name: "Aman",
   password: "scvscd",
   role: "admin",
+};
+
+interface User {
+  id: number;
+  email: string;
+  password: string;
+}
+
+//interfaces inheritance
+interface Admin extends User {
+  role: "Admin";
+}
+
+const newAdmin: Admin = {
+  id: 1,
+  email: "a@gmail.com",
+  password: "pwd",
+  role: "Admin",
 };
