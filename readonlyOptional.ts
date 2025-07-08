@@ -1,10 +1,10 @@
 type User = {
-  readonly _id: string;
-  name: string;
+  readonly _id?: string;
+  name?: string;
   email: string;
-  mobile: number;
-  password: string;
-  isAdmin: true;
+  mobile?: number;
+  password?: string;
+  isAdmin?: true;
 };
 
 // creating a user object of User type which acess all value of user
@@ -18,3 +18,8 @@ const newUser: User = {
 };
 
 // newUser._id = "2"; // this can not be chabngebale beacuase readonly
+
+const loginUser: User = {
+  email: "aman@gmail.com",
+  password: "1234",
+};
