@@ -26,5 +26,7 @@ const loginUser: User = {
 
 //union with Arrays in typescript
 const data: number[] = [1, 2, 3, 4, 5, 6];
-// const MixData: number[] | string[] = [1, 2, 3, 4, 5, 6];
-const MixData: number[] | string[] = ["a", "b", "c", "d", "e"];
+const MixData: number[] | string[] = [1, 2, 3, 4, 5, 6]; // can have only number at once
+const MixData: number[] | string[] = ["a", "b", "c", "d", "e"]; // can have only string at once
+
+const MixData: (number | string | boolean)[] = [1, 2, "a", "b", true, false]; // can contain all 2 values
