@@ -7,7 +7,11 @@ class User {
     this.email = email;
     this.password = password;
   }
+  public checkPassword(input: string): boolean {
+    return this.password === input;
+  }
 }
 
 const Aman = new User("aman@gmail.com", "Aman", "thisispwd");
-Aman.id;
+console.log(Aman.checkPassword("wrong")); // false
+console.log(Aman.checkPassword("thisispwd")); // true
