@@ -5,3 +5,10 @@ function addTwo(num: number) {
 const result = addTwo(5);
 // const output = addTwo("Aman"); // This will cause a type error because "Aman" is not a number
 console.log(result);
+
+// parameters type declaration in arroe fn 
+const getName = (name:string , age:number){
+    return name;
+}
+
+getName("Aman",21);
